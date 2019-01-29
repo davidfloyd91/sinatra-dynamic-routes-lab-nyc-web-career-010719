@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% array = [] %>
+    <% array = params.values.each do |prm| %>
+      <% array << prm %>
+    <% end %>
+    <%= array.join(" ") + "." %>
+  </body>
+</html>
